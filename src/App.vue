@@ -1,6 +1,14 @@
 <template>
   <div id="app">
     <b-navbar class="is-black">
+      <template slot="brand">
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img
+            src="./assets/logo.png"
+            alt="I'm batman"
+          />
+        </b-navbar-item>
+      </template>
       <template slot="start">
         <b-navbar-item href="#">
           Path of Clusters
